@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript dates</title>
+    <style>
+        .container{
+            font-size: 25px;
+            background-color: red;
+            border: 2px solid gray;
+            padding: 34px;
+            margin: 10px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        Current time is <spam id="time"></spam>
+    </div>
+    <script>
+        console.log("this is date and time tutorial");
+        let dt= new Date(0);
+        console.log(dt);
+        // let newDate= new Date("2021-04-18");
+        // console.log(newDate);
+        let newDate= new Date(2030,4,6,9,3,2,34);
+        console.log(newDate);
+        let yr=newDate.getFullYear();
+        console.log("the year is", yr);
+        let month=newDate.getMonth();
+        console.log("the month is", month);
+        let date=newDate.getDate();
+        console.log("the year is", date);
+        let hours=newDate.getHours();
+        console.log("the year is", hours);
+        let sec=newDate.getSeconds();
+        console.log("the seconds is", sec);
+
+        newDate.setDate(5);
+        newDate.setMinutes(55);
+        console.log(newDate);
+        setInterval(updatetime,1000);
+
+        function updatetime(){
+            time.innerHTML= new Date();
+        }
+
+
+    </script>
+</body>
+</html>

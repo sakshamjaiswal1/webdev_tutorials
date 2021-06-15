@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js events</title>
+    <style>
+        #btn{
+            padding: 10px 14px;
+            background: red;
+            border: 2px solid black;
+            font: bold;
+            border-radius: 8px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">HAVELLS-The stock was showing some good upmove in the morning with good volumes and 930 was a crucial turing point for the stock at the beginning I was not that confident about the stock as the major trend was bullish but it changed its direction after taking resistance at 930 with some quick wick formations and volumes .After that I was halting at the pivot below and I got the good risk to reward so I exited the trade and the stock fell few more points.
+            ZEEL-the oi data was showing a mjor resistance at  the above point and the tbq and tsq was also showing weakness in the stock but the movement in the stock was choppy and the oi data was also going against me so I exited at almost my stoploss level.
+            </p>
+         
+    </div>
+    <button id="btn" onclick="hide()">Show/Hide</button>
+    <script>
+        // let para=document.getElementById("para");
+        // para.addEventListener("mouseout", function run(){
+        //     alert("mouse outside");
+
+        // });
+
+        function hide(){
+            // let btn=document.getElementById("btn");
+            // let para=document.getElementById("para");
+            if(para.style.display!="none"){
+            para.style.display="none";}
+            else{
+                para.style.display="block"
+            }
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript settimeout and cleartimeout</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+
+    </div>
+    <script>
+        console.log("this is tut_58");
+        function greet(name,byetext){
+            console.log("hello! goodmorning" + name + " " + byetext);
+        }
+    //     // greet();
+    //    timeout= setTimeout(greet,5000,"sj","take care");
+    //    console.log(timeout);
+    //    clearTimeout(timeout);
+//    intervalId= setInterval(greet,1000,"sj","take care");
+//    clearTimeout(intervalId);
+function displaytime(){
+    time= new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML=time;
+}
+setInterval(displaytime,1000);
+
+
+    </script>
+</body>
+</html>

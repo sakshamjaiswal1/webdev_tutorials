@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            ;
+        }
+
+        .container {
+            width: 1000px;
+            border: 3px solid purple;
+            margin: auto;
+            background: rosybrown;
+        }
+
+        .items {
+
+            border: 2px solid grey;
+            margin: 12px 3px;
+            padding: 12px 10px;
+            background-color: hotpink;
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #clothes {
+            float: right;
+            width: 48%;
+        }
+
+        #sports {
+            /* float: left; */
+            clear: both;
+            width: 100%;
+        }
+
+        p,
+        h3 {
+            text-align: justify;
+        }
+
+        h1 {
+            color: green;
+            border: 5px solid green;
+            background: honeydew;
+            text-align: center;
+            margin: 50px;
+            padding: 20px;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to our Store</h1>
+    <div class="container">
+        <div class="items" id="fruits">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum magni id nisi quas
+                dolores, unde quia corrupti pariatur quasi nemo. Magnam pariatur natus qui cumque placeat nihil, ipsam
+                quidem ut inventore veritatis quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit et
+                incidunt consequuntur qui cum laboriosam impedit obcaecati odio culpa nihil omnis doloremque quod
+                dolorum vel error repellat porro explicabo accusantium, sunt quae odit magnam.
+
+            </p>
+        </div>
+        <div class="items" id="clothes">
+            <h3>clothes</h3>
+            <p id="clothespara" class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla asperiores voluptate iure provident
+                maiores reiciendis aut nisi reprehenderit deserunt optio quaerat repudiandae, eum, officiis eius cumque
+                ducimus voluptatum quod odio iusto. Reprehenderit, facere odit! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Velit et incidunt consequuntur qui cum laboriosam impedit obcaecati odio culpa nihil
+                omnis doloremque quod dolorum vel error repellat porro explicabo accusantium, sunt quae odit magnam.
+            </p>
+        </div>
+        <div class="items" id="sports">
+            <h3>Sports</h3>
+            <p id="sportspara" class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla asperiores voluptate iure provident
+                maiores reiciendis aut nisi reprehenderit deserunt optio quaerat repudiandae, eum, officiis eius cumque
+                ducimus voluptatum quod odio iusto. Reprehenderit, facere odit!
+            </p>
+        </div>
+        <div class="items" id="sports">
+            <h3>Pharma</h3>
+            <p id="pharmapara" class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla asperiores voluptate iure provident
+                maiores reiciendis aut nisi reprehenderit deserunt optio quaerat repudiandae, eum, officiis eius cumque
+                ducimus voluptatum quod odio iusto. Reprehenderit, facere odit!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
