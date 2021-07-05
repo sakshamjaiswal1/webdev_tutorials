@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple form</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+</head>
+<body>
+    <div class="container">
+<form action="" id="form1">
+    <h3>Create Account</h3>
+    <input type="email" name="" id="" placeholder="Email" required>
+    <input type="password" name="" id="" placeholder="Password" required>
+    <input type="password" name="" id="" placeholder="confirmPassword" required>
+
+<div class="btn-box">
+    <button type="button" id="next1">Next</button>
+</div>
+
+</form>
+<form action="" id="form2">
+    <h3>Social Links</h3>
+    <input type="email" name="" id="" placeholder="Medium" >
+    <input type="email" name="" id="" placeholder="Github">
+    <input type="email" name="" id="" placeholder="Linkedin">
+
+<div class="btn-box">
+        <button type="button" id="back1">Back</button>
+
+        <button type="button" id="next2">Next</button>
+    </div>
+
+</form>
+
+<form action="" id="form3">
+    <h3>Persnol Info</h3>
+    <input type="email" name="" id="" placeholder="First Name" required> 
+    <input type="email" name="" id="" placeholder="lastname" required>
+    <input type="email" name="" id="" placeholder="Mobile no" required>
+
+    <div class="btn-box">
+        <button type="button" id="back2">Back</button>
+
+        <button type="submit">Submit</button>
+    </div>
+
+</form>
+<div class="step-row">
+    <div id="progress"></div>
+    <div class="step-col"> <small>Step-1</small></div>
+    <div class="step-col"> <small>Step-2</small></div>
+    <div class="step-col"> <small>Step-3</small></div>
+
+</div>
+    </div>
+<!--  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+        <script>
+            var form1=document.getElementById('form1');
+            var form2 = document.getElementById('form2');
+            var form3 = document.getElementById('form3');
+
+            var next1= document.getElementById('next1')
+            var next2 = document.getElementById('next2')
+            var back1 = document.getElementById('back1')
+            var back2 = document.getElementById('back2')
+         var progress = document.getElementById('progress');
+
+
+            next1.onclick=function(){
+                form1.style.left="-450px";
+                form2.style.left='40px';
+                progress.style.width='240px'
+
+            }
+            back1.onclick = function () {
+                    form1.style.left = "40px";
+                    form2.style.left = '450px';
+                progress.style.width = '120px'
+
+                }
+
+                 next2.onclick = function () {
+                        form2.style.left = "-450px";
+                        form3.style.left = '40px';
+                     progress.style.width = '360px'
+
+                    }
+             back2.onclick = function () {
+                    form2.style.left = "40px";
+                    form3.style.left = '450px';
+                 progress.style.width = '240px'
+
+                }  
+                     
+
+        </script>
+</body>
+</html>
