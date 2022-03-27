@@ -1,0 +1,125 @@
+body {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Courier New", Courier, monospace;
+  background-image: url(./back.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.header {
+  display: flex;
+}
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left img {
+  width: 50px;
+}
+.middle{
+    flex: 4;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  
+}
+.nav li {
+    list-style: none;
+    font-size: 20px;
+
+}
+.nav li a {
+    color: white;
+    text-decoration: none;
+}
+.active{
+    color: green;
+    text-decoration: underline;
+}
+.nav li a:hover{
+    color: green;
+    text-decoration: underline;
+    font-size: 23px;
+    font-weight: 500px;
+    text-transform: uppercase;
+}
+.right {
+   margin: 10px 0 0 0;
+    flex: 1;
+}
+.btn{
+    padding: 5px 10px;
+    background-color: #b7c4eb;
+    border: 1px solid #b7c4eb ;
+    border-radius: 4px;
+    color: #25272b;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+}
+.btn:hover{
+    text-transform: uppercase;
+   background-color: rgb(196, 226, 226);
+   color: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+}
+.forms input{
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 200px;
+}
+.forms div label{
+    margin: 5px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.forms  div select {
+    padding: 8px 120px ;
+    border-radius: 5px;
+    border: none;
+}
+.forms select option{
+    background-color: white;
+}
+
+ input::placeholder {
+   text-align: center;
+   font-weight: 500;
+   font-family: "Courier New", Courier, monospace;
+  }
+  .forms textarea{
+      border-radius: 5px;
+      border: none; 
+  }
+  textarea::placeholder{
+      text-align: center;
+     
+  }
